@@ -8,12 +8,15 @@
 
 import UIKit
 import RealmSwift
+import UserNotifications
 
 class InputViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var textView: UITextView!
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     var todo: Todo? = nil
     
@@ -56,6 +59,32 @@ class InputViewController: UIViewController {
         }
         //前の画面に戻る
         navigationController?.popViewController(animated: true)
+        
+        //通知の作成
+        let notificationContent = UNMutableNotificationContent()
+        //通知のタイトルに画面で入力されたタイトルを設定
+        notificationContent.title = textField.text!
+        //通知の本文に画面で入力された本文を設定
+        notificationContent.body = textView.text!
+        //通知音にデフォルト音声を設定
+        notificationContent.sound = .default
+        
+        //通知時間の作成
+        var notificationTime = DateComponents()
+        let calender = Calendar.current //現在時間を取得
+        
+        //時間の設定
+        notificationTime.hour = calender.component(.hour, from:datePicker.date)
+        notificationTime.minute = calender.component(.minute, from:datePicker.date)
+        
+        
+        //通知に通知時間を設定
+        let trigger = UNCalendarNotificationTrigger(dateMatching: notificationTime, repeats: false)
+        let request = UNNotificationRequest(identifier: "uuid", content: notificationContent, trigger: trigger)
+        
+        //通知を登録
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
         
         
         

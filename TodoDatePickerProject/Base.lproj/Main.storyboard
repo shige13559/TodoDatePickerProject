@@ -95,6 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RUL-Er-rrc"/>
                     <connections>
+                        <outlet property="datePicker" destination="Fwe-P1-P9g" id="6mA-lm-jn8"/>
                         <outlet property="textField" destination="EKe-ge-UF3" id="vda-Z0-5hh"/>
                         <outlet property="textView" destination="tNe-uX-vEB" id="d9T-4a-e8m"/>
                     </connections>

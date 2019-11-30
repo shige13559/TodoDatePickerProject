@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import UserNotifications
 
 class ListViewController: UIViewController {
     
@@ -78,6 +79,9 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
         let Todo = todos[indexPath.row]
         
         cell.textLabel?.text = Todo.title
+        
+        //レイアウト
+        cell.accessoryType = .disclosureIndicator
         //完成したセルを返す
         return cell
     }
