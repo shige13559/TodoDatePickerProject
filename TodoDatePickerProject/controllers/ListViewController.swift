@@ -30,6 +30,9 @@ class ListViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // ナビゲーションバーのスタイル設定（黒いすりガラス）
+           self.navigationController?.navigationBar.barStyle = .black
     }
     
     //画面が表示される前に実行される(表示されるたび何度も)
@@ -44,6 +47,14 @@ class ListViewController: UIViewController {
     @IBAction func didClickButton(_ sender: UIButton) {
         
         performSegue(withIdentifier: "toInput", sender: nil)
+        
+        // 次の画面のBackボタンを「戻る」に変更
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(
+            title:  "戻る",
+            style:  .plain,
+            target: nil,
+            action: nil
+        )
         
     }
     
