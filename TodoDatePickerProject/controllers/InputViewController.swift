@@ -35,6 +35,10 @@ class InputViewController: UIViewController {
             //button.setTitle("追加", for: .normal)
             
         //}
+        
+        self.textView.layer.borderColor = UIColor.black.cgColor
+        self.textView.layer.borderWidth = 2
+        
     }
     
     @IBAction func didClickbutton(_ sender: UIButton) {

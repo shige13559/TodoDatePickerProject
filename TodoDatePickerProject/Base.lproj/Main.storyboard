@@ -73,9 +73,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tNe-uX-vEB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tNe-uX-vEB">
                                 <rect key="frame" x="20" y="168" width="374" height="311"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -99,14 +98,15 @@
                         <constraints>
                             <constraint firstItem="EKe-ge-UF3" firstAttribute="top" secondItem="tdF-8H-7JH" secondAttribute="top" constant="25" id="2sa-fW-uO8"/>
                             <constraint firstItem="tdF-8H-7JH" firstAttribute="trailing" secondItem="EKe-ge-UF3" secondAttribute="trailing" constant="20" id="6Lu-72-F3b"/>
+                            <constraint firstItem="tNe-uX-vEB" firstAttribute="top" secondItem="EKe-ge-UF3" secondAttribute="bottom" constant="21" id="8Ps-60-Oxe"/>
                             <constraint firstItem="tdF-8H-7JH" firstAttribute="bottom" secondItem="n9c-LW-dbU" secondAttribute="bottom" constant="45" id="Anb-93-Lfs"/>
                             <constraint firstItem="Fwe-P1-P9g" firstAttribute="trailing" secondItem="tdF-8H-7JH" secondAttribute="trailing" id="EIl-bl-bYC"/>
                             <constraint firstItem="EKe-ge-UF3" firstAttribute="leading" secondItem="tdF-8H-7JH" secondAttribute="leading" constant="20" id="ILP-DN-jLh"/>
                             <constraint firstItem="Fwe-P1-P9g" firstAttribute="leading" secondItem="tdF-8H-7JH" secondAttribute="leading" id="LCV-TO-dSZ"/>
-                            <constraint firstItem="tNe-uX-vEB" firstAttribute="centerX" secondItem="OAq-oE-Yxf" secondAttribute="centerX" id="VXQ-kK-BAE"/>
                             <constraint firstItem="tNe-uX-vEB" firstAttribute="leading" secondItem="tdF-8H-7JH" secondAttribute="leading" constant="20" id="aRS-Yh-oF3"/>
                             <constraint firstItem="Fwe-P1-P9g" firstAttribute="centerX" secondItem="OAq-oE-Yxf" secondAttribute="centerX" id="mJg-oq-z3C"/>
                             <constraint firstItem="tdF-8H-7JH" firstAttribute="trailing" secondItem="tNe-uX-vEB" secondAttribute="trailing" constant="20" id="o7n-DG-P92"/>
+                            <constraint firstItem="n9c-LW-dbU" firstAttribute="top" secondItem="tNe-uX-vEB" secondAttribute="bottom" constant="238" id="qzF-PD-c9j"/>
                             <constraint firstItem="n9c-LW-dbU" firstAttribute="centerX" secondItem="OAq-oE-Yxf" secondAttribute="centerX" id="uRq-cX-B2s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tdF-8H-7JH"/>
