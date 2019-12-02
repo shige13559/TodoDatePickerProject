@@ -59,6 +59,7 @@ class ListViewController: UIViewController {
     }
     
     
+    
     //日記を全件取得するメソッド
     func getAllTodo() -> [Todo]{
         
@@ -72,6 +73,8 @@ class ListViewController: UIViewController {
         return todos
         
     }
+    
+    
     
 
     

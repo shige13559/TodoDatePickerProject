@@ -68,47 +68,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-ge-UF3">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-ge-UF3">
                                 <rect key="frame" x="20" y="113" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tNe-uX-vEB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tNe-uX-vEB">
                                 <rect key="frame" x="20" y="168" width="374" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9c-LW-dbU">
-                                <rect key="frame" x="142" y="717" width="130" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="mnC-4p-A0Q"/>
-                                    <constraint firstAttribute="height" constant="100" id="sQ6-6R-7Oy"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9c-LW-dbU">
+                                <rect key="frame" x="142" y="779" width="130" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="didClickbutton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="i48-au-LcD"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fwe-P1-P9g">
-                                <rect key="frame" x="0.0" y="531" width="414" height="216"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fwe-P1-P9g">
+                                <rect key="frame" x="0.0" y="487" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydd-Yw-KaD">
+                                <rect key="frame" x="20" y="733" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="月"/>
+                                <connections>
+                                    <action selector="weekClickButton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="yUX-6x-g1c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-Xe-mGX">
+                                <rect key="frame" x="131" y="733" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="水"/>
+                                <connections>
+                                    <action selector="weekClickButton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="EZn-7T-Xfl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-29-RyO">
+                                <rect key="frame" x="187" y="733" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="木"/>
+                                <connections>
+                                    <action selector="weekClickButton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="vr7-ZR-G1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fN-es-ODx">
+                                <rect key="frame" x="300" y="733" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="土"/>
+                                <connections>
+                                    <action selector="weekClickButton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="ofP-mf-gVd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0E-DE-Lac">
+                                <rect key="frame" x="243" y="733" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="金"/>
+                                <connections>
+                                    <action selector="weekClickButton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="4qF-bZ-olW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixe-Tw-8od">
+                                <rect key="frame" x="354" y="733" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="日"/>
+                                <connections>
+                                    <action selector="weekClickButton:" destination="hWZ-JB-6Bf" eventType="touchUpInside" id="ZT9-qp-03U"/>
+                                    <action selector="weekClickButton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="npt-83-J4q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz2-gP-B7i">
+                                <rect key="frame" x="77" y="733" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="火"/>
+                                <connections>
+                                    <action selector="weekClickButton:" destination="Ecf-Kl-sGI" eventType="touchUpInside" id="sn5-S6-NLL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="EKe-ge-UF3" firstAttribute="top" secondItem="tdF-8H-7JH" secondAttribute="top" constant="25" id="2sa-fW-uO8"/>
-                            <constraint firstItem="tdF-8H-7JH" firstAttribute="trailing" secondItem="EKe-ge-UF3" secondAttribute="trailing" constant="20" id="6Lu-72-F3b"/>
-                            <constraint firstItem="tNe-uX-vEB" firstAttribute="top" secondItem="EKe-ge-UF3" secondAttribute="bottom" constant="21" id="8Ps-60-Oxe"/>
-                            <constraint firstItem="tdF-8H-7JH" firstAttribute="bottom" secondItem="n9c-LW-dbU" secondAttribute="bottom" constant="45" id="Anb-93-Lfs"/>
-                            <constraint firstItem="Fwe-P1-P9g" firstAttribute="trailing" secondItem="tdF-8H-7JH" secondAttribute="trailing" id="EIl-bl-bYC"/>
-                            <constraint firstItem="EKe-ge-UF3" firstAttribute="leading" secondItem="tdF-8H-7JH" secondAttribute="leading" constant="20" id="ILP-DN-jLh"/>
-                            <constraint firstItem="Fwe-P1-P9g" firstAttribute="leading" secondItem="tdF-8H-7JH" secondAttribute="leading" id="LCV-TO-dSZ"/>
-                            <constraint firstItem="tNe-uX-vEB" firstAttribute="leading" secondItem="tdF-8H-7JH" secondAttribute="leading" constant="20" id="aRS-Yh-oF3"/>
-                            <constraint firstItem="Fwe-P1-P9g" firstAttribute="centerX" secondItem="OAq-oE-Yxf" secondAttribute="centerX" id="mJg-oq-z3C"/>
-                            <constraint firstItem="tdF-8H-7JH" firstAttribute="trailing" secondItem="tNe-uX-vEB" secondAttribute="trailing" constant="20" id="o7n-DG-P92"/>
-                            <constraint firstItem="n9c-LW-dbU" firstAttribute="top" secondItem="tNe-uX-vEB" secondAttribute="bottom" constant="238" id="qzF-PD-c9j"/>
-                            <constraint firstItem="n9c-LW-dbU" firstAttribute="centerX" secondItem="OAq-oE-Yxf" secondAttribute="centerX" id="uRq-cX-B2s"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tdF-8H-7JH"/>
                     </view>
                     <navigationItem key="navigationItem" id="RUL-Er-rrc"/>
@@ -119,6 +170,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxo-2y-V1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hWZ-JB-6Bf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2097.1014492753625" y="116.51785714285714"/>
         </scene>
